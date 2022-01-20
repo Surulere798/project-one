@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'roboot', sans-serif;
+}
+.container-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 4.8rem;
+    position: fixed;
+ 
+}
+.left-side-menu{
+    display: flex;
+}
+.nav-wrapper>.left-side-menu div{
+    margin-right: 1rem;
+    padding-left: 1.1rem;
+         
+}
+.right-side-menu> .brand img{
+margin-right: 0;
+width: 30%;
+}
+.nav-wrapper>.left-side-menu>div a{
+    color: rgb(41, 53, 223);
+    border-bottom: 0.1rem solid transparent;
+    transition: border-bottom 1s;
+}
+.nav-wrapper>.left-side-menu>div a:hover{
+    color: yellowgreen;
+    transition: color 1s;
+    border-bottom: 0.1rem solid yellowgreen;
+
+}
+.active-link{
+    color:rgb(240, 236, 227) !important;
+}
+/* ...end of navigation styles..*/
+ /*--- section welcome ---*/
+.welcome-wrapper {
+    width: 100%;
+    height: 500px;
+    background-image: url("istockphoto-1321777631-170667a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-wrapper h1 {
+    color:blue;
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .product-portfolio-wrapper h2{
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .product-portfolio-items{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+}
+  .product-portfolio-item{
+      position: relative; 
+}
+  .grid-product{
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding-top: 1rem; 
+  }
+  .clear{
+      clear: both;
+  }   
+  .background-img-content{
+    height: 10rem;
+    width: 90%;
+    background-color: rgb(234, 238, 236);
+    margin-bottom: 2rem;
+    margin-left:auto;
+  }
+  .grid-product img {
+    width:50%;
+    height: auto;
+  }
+  .grid-product:hover {
+    background: #e1e1e1;
+    height: 10rem;
+   
+  }
+  .grid-detail p:last-child {
+    transition: .5s;
+    margin-top: 10px;
+  }
+  .grid-product:hover > .grid-detail p:last-child {
+    color: #3498db;
+  }
+  /*...end of mac product style */
+  .product-items-phone{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .product-item-phone{
+      position: relative;
+  }
+  .background-phone-content{
+    height: 10rem;
+    width: 90%;
+    background-color: rgb(234, 238, 236);
+    margin-bottom: 2rem;
+    margin-left:auto;
+  }
+  .grid-product{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem; 
+  }
+  /*..end of grid product style.*/
+  /*.. footer style..*/
+  .footer-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(250, 246, 246);
+    height: 15rem;
+    padding-top: 1.5rem;
+ 
+  }
+  .two-columns-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    width: 100%;
+    
+  }
+  .footer-brand{
+    position: relative;
+  }
+  .footer-content{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 2rem;
+    
+  }
+  .left-side-footer > ul li{
+    list-style: none;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    margin-left: 3rem;
+    padding-top: 1rem;
+    color: wheat;
+  }
+  .left-side-footer > ul> li a{
+    color: teal;
+  }
+  .right-side-footer> ul li{
+    list-style: none;
+    padding-top: 1rem;
+    color:turquoise;
+
+  }
+  .right-side-footer> ul> li h4{
+    color: wheat;
+  }
+  .right-side-footer> ul> li a{
+    color: teal;
+  }
